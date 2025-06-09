@@ -233,3 +233,54 @@ hr {
   transition: transform 0.2s ease;
 }
 
+
+/* Toggle Button Style */
+.dark-mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #1f77b4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #00bcd4;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #00bcd4;
+}
+
+body.dark-mode a {
+  color: #00bcd4;
+}
+
+body.dark-mode .resume-button {
+  background-color: #00bcd4;
+  color: #1a1a1a;
+}
+
+body.dark-mode .project-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
+
+body.dark-mode .skill-category {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
