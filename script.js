@@ -16,6 +16,22 @@ submitButton.addEventListener('click', function(e) {
 	}
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("darkModeToggle");
+  const prefersDark = localStorage.getItem("darkMode") === "true";
+
+  if (prefersDark) {
+    document.body.classList.add("dark-mode");
+    toggleButton.textContent = "☀️ Light Mode";
+  }
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    toggleButton.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    localStorage.setItem("darkMode", isDark);
+  });
+});
 
 // attaching 'click listener'
 
