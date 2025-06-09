@@ -150,36 +150,45 @@ hr {
 }
 
 .skills-section {
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
   padding: 0 1rem;
 }
 
 .skills-section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  max-width: 800px; /* keeps it centered on wide screens */
-  margin: 0 auto;    /* centers the grid itself */
-  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .skill-category h4 {
   color: #0073e6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
-  text-align: center;
 }
 
 .skill-category ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .skill-category li {
@@ -189,3 +198,9 @@ hr {
   align-items: center;
   gap: 0.5rem;
 }
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease;
+}
+
