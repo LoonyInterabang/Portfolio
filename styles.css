@@ -160,18 +160,30 @@ hr {
 
 .skills-section {
   margin-top: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 1rem;
+  max-width: 800px; /* keeps it centered on wide screens */
+  margin: 0 auto;    /* centers the grid itself */
+  text-align: left;
 }
 
 .skill-category h4 {
-  margin-bottom: 0.5rem;
   color: #0073e6;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .skill-category ul {
@@ -180,7 +192,7 @@ hr {
 }
 
 .skill-category li {
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
   font-size: 1rem;
   display: flex;
   align-items: center;
