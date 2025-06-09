@@ -7,8 +7,18 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto Mono', monospace;
+  color: #1f77b4;
 }
+
+a {
+  color: #1f77b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
 
 .container {
   max-width: 840px;
@@ -61,8 +71,7 @@ align: center;
 }
 
 .project-card h4 {
-  margin: 0.5rem 0;
-  color: #0073e6;
+  color: #1f77b4;
 }
 
 .project-card p {
@@ -147,8 +156,7 @@ hr {
 }
 
 .resume-button {
-  display: inline-block;
-  background-color: #0073e6;
+  background-color: #1f77b4;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -159,8 +167,9 @@ hr {
 }
 
 .resume-button:hover {
-  background-color: #005bb5;
+  background-color: #00bcd4;
 }
+
 
 .skills-section {
   margin-top: 3rem;
@@ -196,7 +205,7 @@ hr {
 
 
 .skill-category h4 {
-  color: #0073e6;
+  color: #1f77b4;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
