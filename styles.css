@@ -123,11 +123,6 @@ justify-self: center;
 }
 
 
-@media (max-width: 650px) {
-  .projects-grid {
-    grid-template-columns: 100%;
-  }
-}
 
 form input, textarea {
   padding: 5px;
