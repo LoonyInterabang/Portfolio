@@ -21,23 +21,14 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-.Achievements, .Skills, .growth, .passion {
-  text-align: center;
-}
+align: center;
+
 .links-list {
   list-style: none;
   padding: 0;
 }
 
-@media (max-width: 480px) {
-  .about-grid{
-    grid-template-columns: 100%;
-  }
-}
+
 
 .projects-heading {
   text-align: center;
